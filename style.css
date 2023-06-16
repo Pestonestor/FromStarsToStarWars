@@ -1,0 +1,138 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 15pt;
+  background-color: #050205;
+}
+
+
+
+#container{
+  position: relative;
+  border: 1px solid black;
+  height: 100vh;
+  overflow: hidden;
+
+}
+
+.cloud {
+  position: absolute;
+  opacity: .07;
+  border-radius: 50%;
+  box-shadow: 0px 0px 50px 100px;
+}
+
+
+.twinkle{
+  position: absolute;
+  border-radius: 50%;
+  animation-iteration-count: infinite;
+}
+
+.light{
+  box-shadow: 0px 0px 25px 2px white;
+}
+
+@keyframes twinkle {
+  0%{ background-color: white;
+    opacity: .3;
+  }
+  45%{ background-color: whitesmoke;}
+  50%{ background-color: orangered;}
+  55%{ background-color: white;}
+  85%{ background-color: whitesmoke;}
+  90%{ background-color: yellow;}
+  95%{ background-color: whitesmoke;}
+}
+
+#long{
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  top: 37%;
+  color: rgb(100,220,170);
+  opacity: 0;
+  text-shadow: 0px 0px 20px white;
+  animation-name: long; 
+  animation-duration: 5.5s;
+}
+
+@keyframes long{
+  0%{opacity: 1}
+  95%{opacity: 1}
+  100%{opacity: 0}
+}
+
+#pesto {
+  text-align: center;
+  width: 100%;
+  color: white;
+  /*text-shadow: 1px 1px 1px rgb(255,197,85),
+  -1px 1px 1px rgb(255,197,85),
+  1px -1px 1px rgb(255,197,85),
+  -1px -1px 1px rgb(255,197,85);*/
+  position: absolute;
+  transform: scale(2);
+  opacity: 0;
+  top: 39%;
+  animation-name: pesto;
+  animation-duration: 12s;
+  animation-timing-function: ease-out;
+  animation-delay: 8s;
+}
+
+@keyframes pesto{
+  0%{opacity: 1;
+    transform: perspective(50px)
+    translateZ(45px)
+  }
+  95%{opacity: 1;
+    transform: perspective(50px)
+    translateZ(-70px)
+  }
+  100% {
+    opacity: 0;
+    transform: perspective(50px)
+    translateZ(-70px)
+  }
+}
+
+#crawl{
+  width: 65%;
+  opacity: 0;
+  text-align: justify;
+  font-size: 1em;
+  position: absolute;
+  top: 55vh;
+  left: 0;
+  right: 0;
+  margin: auto;
+  color: rgb(255,197,85);
+  animation-name: crawl;
+  animation-duration: 65s;
+  animation-timing-function: linear;
+  animation-delay: 13.5s;
+  
+}
+
+@keyframes crawl{
+  0%{transform-origin: top center;
+    transform: perspective(700px) 
+    rotateX(65deg) 
+    translateY(440px);}
+  1%{transform-origin: top center;
+  opacity: 1}
+  90%{transform-origin: top center;
+  opacity:1;
+    transform: perspective(700px) 
+    rotateX(65deg) 
+    translateY(-1700px)}
+  100%{transform-origin: top center;
+    opacity: 0;
+    transform: perspective(700px) 
+    rotateX(65deg) 
+    translateY(-2377px)}
+}
+  
+  
+  
