@@ -1,1 +1,3 @@
 # FromStarsToStarWars
+I'm learning Javascript, and I thought it would be fun to make a star filled sky so as to use some newly learned tools. I put a lot of divs out there, gave them random positions and sizes, shed a little backlight to some, a little twinkle to others. I pushed further and made nebulas with random sizes, positions and colors in the blue to violet to white range. I had a beautiful night sky. I was done. Or was I?
+Ahhh...the Star Wars fan in me thought otherwise. Now that I got the intro kind of working (need media queries), the next step would be laser shots and the Imperial Starfleeet passing by ;)
